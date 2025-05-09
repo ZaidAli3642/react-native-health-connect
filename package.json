@@ -16,7 +16,7 @@
   "author": "Zaid Ali <zaidali36422@gmail.com> (https://github.com/ZaidAli3642)",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
   "scripts": {
     "test": "jest",
