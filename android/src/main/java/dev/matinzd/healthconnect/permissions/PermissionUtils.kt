@@ -19,6 +19,10 @@ class PermissionUtils {
           return@mapNotNull HealthPermission.PERMISSION_WRITE_EXERCISE_ROUTE
         }
 
+        if (accessType == "read" && recordType == "BackgroundAccessPermission") {
+          return@mapNotNull HealthPermission.PERMISSION_READ_HEALTH_DATA_IN_BACKGROUND
+        }
+
         val recordClass = reactRecordTypeToClassMap[recordType]
           ?: throw InvalidRecordType()
 
@@ -47,6 +51,10 @@ class PermissionUtils {
           if (grantedPermissions.contains(writePermissionForRecord)) {
             pushMap(ReactPermission(AccessType.WRITE, recordType).toReadableMap())
           }
+        }
+
+        if (grantedPermissions.contains(HealthPermission.PERMISSION_READ_HEALTH_DATA_IN_BACKGROUND)) {
+            pushMap(ReactPermission(AccessType.READ, "BackgroundAccessPermission").toReadableMap())
         }
       }
     }

@@ -10,6 +10,11 @@ export interface WriteExerciseRoutePermission {
   recordType: 'ExerciseRoute';
 }
 
+export interface BackgroundAccessPermission {
+  accessType: 'read';
+  recordType: 'BackgroundAccessPermission';
+}
+
 export * from './records.types';
 export * from './results.types';
 export * from './aggregate.types';
