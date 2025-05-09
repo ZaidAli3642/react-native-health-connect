@@ -1,5 +1,5 @@
 {
-  "name": "react-native-health-connect",
+  "name": "@zaidali/react-native-health-connect",
   "version": "3.3.2",
   "description": "React native library for health connect (Android only)",
   "funding": "https://github.com/matinzd/react-native-health-connect?sponsor=1",
@@ -8,13 +8,13 @@
   "types": "lib/typescript/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
-  "repository": "https://github.com/matinzd/react-native-health-connect",
-  "author": "matinzd <me@matinzd.dev> (https://github.com/matinzd)",
-  "license": "MIT",
+  "repository": "https://github.com/ZaidAli3642/react-native-health-connect",
   "bugs": {
-    "url": "https://github.com/matinzd/react-native-health-connect/issues"
+    "url": "https://github.com/ZaidAli3642/react-native-health-connect/issues"
   },
-  "homepage": "https://github.com/matinzd/react-native-health-connect#readme",
+  "homepage": "https://github.com/ZaidAli3642/react-native-health-connect#readme",
+  "author": "Zaid Ali <zaidali36422@gmail.com> (https://github.com/ZaidAli3642)",
+  "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
